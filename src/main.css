@@ -35,6 +35,28 @@ a{
   color: #f6f6f6;
 } 
 
+.grey-color{
+  color:#4d5053;
+
+}
+
+/*TypoGraphy*/
+h1, h2, h3, h4, h5, h6{
+  font-family: "DM Serif Display", serif;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 2.5px;
+} 
+
+p{
+  line-height: 150%;
+}
+
+.txt-center{
+  text-align: center;
+}
+
 /* Grid */
 
 .container{
