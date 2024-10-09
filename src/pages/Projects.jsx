@@ -1,10 +1,18 @@
 import Header from "../components/Header/Header";
+import Banner from "../components/Banner/Banner";
+import Footer from "../components/Footer/Footer";
+import ProjectLists from "../components/ProjectList/ProjectLists";
+
+
 function Projects() {
     return (
         <>
             <Header />
-            <h1>Projects</h1>
-            <p>Subtitle Projects</p>
+            <Banner title="Projects" image="Banner-Prroject.svg"/>
+            <div className="container">
+                <ProjectLists />
+            </div>
+            <Footer />
         </>
     );
 }
