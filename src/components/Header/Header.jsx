@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 //CSS
 import './Header.css'
@@ -6,14 +7,29 @@ import './Header.css'
 //ASSETS
 import Logo from '../../assets/dnc-logo.svg'
 
+//COMPONENTES
+import Button from '../Button/Button'
+
 function Header() {
+    const [isOpen, SetisOpen] = useState(false)
+    const toggleMenu = () => {
+        SetisOpen(!isOpen)
+    }
     return (
         <header>
             <div className="container">
                 <div className="al-center d-flex jc-space-between">
                     <Link to="/"><img src={Logo} /> </Link>
+                    <div className='mobile-menu'>
+                        <Button buttonStyle="secondary" onClick = {toggleMenu}>
+                            Menu
+                        </Button>
+                    </div>
 
-                    <nav>
+                    <nav className={`${isOpen ? 'open' : ''}`}>
+                        <Button buttonStyle="unstyled" className="mobile-menu close-btn" onClick = {toggleMenu}>
+                            X
+                        </Button>
                         <ul className='d-flex'>
                             <li>
                                 <Link to="/">Home</Link>
