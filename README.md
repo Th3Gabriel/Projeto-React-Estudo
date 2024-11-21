@@ -31,3 +31,4 @@ O objetivo principal é praticar e aprimorar habilidades no desenvolvimento com 
 - **Styled Components**: Estilização personalizada e responsiva.
 - **EmailJS**: Integração do formulário de contato com serviços de e-mail.
 ---
+[Deploy](https://projeto-react-estudo.vercel.app/)
